@@ -15,13 +15,19 @@ The line graph shows that how total fares by city types flow during the months o
 <img src ="https://github.com/hkyopreston/Pyber_Analysis/blob/master/Total_Fare_by_City_Type.png?raw=true"></img>
 
 
-The second paragraph should include the following:
+---------------------------
 
-What challenges or difficulties did you encounter? If none, then briefly explain what challenges or difficulties may be encountered and how to avoid them using technical analysis.
-Explain how you overcame any challenges or difficulties, and include what technical analysis you use to overcome the challenges or difficulties.
+The main difficulties I encoutered was with the line graph. Converting the Date index to a DateTime data type was difficult for me, as there was many differing syntax guidelines in converting data types. I also struggled with created a new pivot DataFrame with the converted index and specific columns. Creating a Pivot Table was a new task so it took some research to create it. I used stack overflow to find examples of both the things I struggled with. 
 
-The third paragraph should include the following:
+---------------------------
 
-Based on the data from the different city types, what recommendations would you give the CEO for addressing any disparities among the city types?
-Provide two additional analyses you could do to gain more insight into the data, like using other datasets.
-What technical steps would you take to perform the additional analyses?
+I would recommend that there be a push to employ more drivers in suburban and possibly rural areas. There would need to be more research done to see if demand exists for Pyber rides first. Increasing the number of drivers in those areas could increase the total number of rides and decrease the cost to the rider. 
+In order to gain more insight, the following analyses could be done:
+
+  * Analyze the total fares by city type on a weekly basis for the entirety of 2019. 
+      * This would be similar to the previous line graph in that a weekly pivot DataFrame would need to be created for all of  2019. This could give Pyber a better depiction of when drivers are in more demand. 
+      
+  * Analyze Suburban and Rural cities to see if any of them need an influx of drivers
+      *  A DataFrame for both Suburban and Rural city types would need to be created. Possibly a pivot DataFrame that shows the city type and then each city within those types. The total fares per city would need to be calculated using the groupby() and sum() functions. The total drivers for each city grouped by city types will also need to be calculated. 
+
+
